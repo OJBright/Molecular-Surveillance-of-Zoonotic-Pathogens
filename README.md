@@ -1,17 +1,17 @@
-# Metagenomic Surveillance of Zoonotic Pathogens at the Human-Wildlife Interface of Murchison Falls National Park, Uganda
+# Metagenomic Surveillance of Zoonotic Pathogens at the Human-Wildlife Interface.
 
 ## Overview
-This repository contains bioinformatics scripts and analysis code for a shotgun metagenomics study screening for zoonotic pathogens in human blood samples collected from communities living at the boundaries of Murchison Falls National Park (MFNP), Uganda.
+This repository contains bioinformatics scripts and analysis code for a shotgun metagenomics study screening for zoonotic pathogens in human blood samples collected from communities living at the boundaries of a National Park in Uganda.
 
-Communities at the MFNP boundary share ecological interfaces with wildlife — including habitat, water sources, and parasites — making them uniquely vulnerable to zoonotic disease spillover. This study provides the first molecular surveillance data for this high-risk human-wildlife interface population.
+Communities at the MFNP boundary share ecological interfaces with wildlife, including habitat, water sources, and parasites making them uniquely vulnerable to zoonotic disease spillover. This study provides the first molecular surveillance data for this high-risk human-wildlife interface population.
 
 ---
 
 ## Study Design
-- **Sample type:** Human blood (pooled; 4 individuals per pool, same sex)
+- **Sample type:** Human blood
 - **Total samples:** 27 paired-end samples (54 files)
 - **Sequencing platform:** Illumina NovaSeq X (100bp paired-end)
-- **Study site:** Murchison Falls National Park boundaries, Uganda
+- **Study site:** (Private)
 
 ---
 
@@ -63,19 +63,6 @@ Raw Reads → QC Check → Quality Trimming → Host Depletion → Taxonomic Cla
 │   └── metadata.csv                  # Sample metadata
 └── README.md
 ```
-
----
-
-## Key Findings (Preliminary)
-- Zoonotic pathogens detected across multiple samples using Kraken2 + PlusPF database
-- *Mycobacterium tuberculosis* complex detected in 27/27 samples
-- *Toxoplasma gondii* detected in 24/27 samples
-- *Cryptococcus* spp. detected in 26/27 samples
-- *Leptospira* spp. detected in 15/27 samples
-- *Giardia intestinalis* detected in 11/27 samples
-- *Cryptosporidium parvum* detected in 8/27 samples
-
----
 
 ## Requirements
 
@@ -130,14 +117,16 @@ Rscript scripts/05_R_analysis/01_data_loading.R
 ---
 
 ## Authors
-- **[Your Name]** — Bioinformatics analysis, manuscript preparation
-- **[Mentor Name]** — Study design, supervision
+- **Jerome Bright Ogenrwot**- Bioinformatics analysis, manuscript preparation
+- **Peter Ziribagwa Sabakaki**- Study design, supervision
 
 ## Institution
-[Your Institution], Uganda
+African Center of Excellence in Bioinformatics and Data Intensive Sciences
+Infectious Diseases Institute, Makerere University
+Kampala, Uganda
 
 ## License
 This project is licensed under the MIT License.
 
 ## Acknowledgements
-Data generated as part of the DFG-funded project. Computational analysis performed on the ACE HPC cluster, Kampala, Uganda.
+Data was analysed using computational resources (High Performance Computing) from the ACE, supported by the US National Institutes of Health
